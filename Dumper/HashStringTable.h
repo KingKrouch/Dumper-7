@@ -4,6 +4,7 @@
 #include <cassert>
 #include <format>
 #include <iostream>
+#include <cstring>
 
 #define WINDOWS_IGNORE_PACKING_MISMATCH
 

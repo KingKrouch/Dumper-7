@@ -3,7 +3,7 @@
 #include <array>
 #include <string>
 #include <iostream>
-#include <Windows.h>
+#include "WinInclude.h"
 #include "Enums.h"
 #include "Utils.h"
 #include "Offsets.h"

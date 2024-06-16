@@ -1,5 +1,5 @@
 #pragma once
-#include <Windows.h>
+#include "WinInclude.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -909,7 +909,7 @@ inline MemAddress FindByStringInAllSections(Type RefStr, uintptr_t StartAddress 
 	DWORD SearchRange = StartAddress ? ImageEnd - StartAddress : SizeOfImage;
 
 	if (Range != 0x0)
-		SearchRange = min(Range, SearchRange);
+		SearchRange = std::min(Range, SearchRange);
 
 	if ((StartAddress + SearchRange) >= ImageEnd)
 		SearchRange -= OffsetFromMemoryEnd;

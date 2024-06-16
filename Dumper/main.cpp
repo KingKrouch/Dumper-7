@@ -1,4 +1,4 @@
-#include <Windows.h>
+#include "WinInclude.h"
 #include <iostream>
 #include <chrono>
 #include <fstream>
